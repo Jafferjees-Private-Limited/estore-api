@@ -1,9 +1,9 @@
 import nc from "next-connect";
-import { getAllstocks } from "@/controller/stock/stock";
 import onError from "@/common/errorMiddleWare";
 
+import { getstocksByoldcode } from "@/controller/stock/stock";
+
 const handler = nc({ onError });
-handler.get(getAllstocks);
-handler.get(getAllstocks);
+handler.get(getstocksByoldcode);
 
 export default handler;
