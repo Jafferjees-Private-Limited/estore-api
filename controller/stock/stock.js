@@ -32,5 +32,5 @@ const getstocksByoldcode = async (req, res, next) => {
     res.status(500).json(err);
   }
 };
-
+// hello
 export { getAllstocks, getstocksByoldcode };
